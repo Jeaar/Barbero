@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5C6C6"
+    android:orientation="vertical"
+    tools:context="Log_In">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/koh"
+            android:text="Login"
+            android:textColor="#333"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/koh"
+            android:text="Username"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:fontFamily="@font/koh"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="10dp"
+            android:hint="Type your username"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:textColor="#333"
+            android:textColorHint="#999696" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/koh"
+            android:text="Password"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:hint="Type your password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:textColor="#333"
+            android:fontFamily="@font/koh"
+            android:textColorHint="#999696" />
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/koh"
+            android:layout_marginVertical="15dp"
+            android:text="Forgot password"
+            android:textAlignment="textEnd"
+            android:textColor="#333" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/koh"
+            android:background="@drawable/primarybtn"
+            android:textColor="@color/white"
+            android:text="Log In" />
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/koh"
+            android:layout_marginVertical="15dp"
+            android:text="New User? Sign Up"
+            android:textAlignment="center"
+            android:textColor="#333" />
+
+    </LinearLayout>
+
+</LinearLayout>
