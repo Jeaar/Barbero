@@ -9,11 +9,11 @@
     android:padding="25dp"
     tools:context=".Home_Page">
 
-
     <ImageView
+        android:id="@+id/profile"
         android:layout_width="80dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="end"
         android:src="@drawable/logo" />
 
     <TextView

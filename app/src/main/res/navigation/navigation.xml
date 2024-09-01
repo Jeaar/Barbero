@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+
+    app:startDestination="@id/log_In">
+
+    <fragment
+        android:id="@+id/log_In"
+        android:name="com.example.barbero.Log_In"
+        android:label="fragment_log__in"
+        tools:layout="@layout/fragment_log__in" >
+        <action
+            android:id="@+id/action_log_In_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_log_In_to_sign_Up"
+            app:destination="@id/sign_Up" />
+    </fragment>
+    <fragment
+        android:id="@+id/sign_Up"
+        android:name="com.example.barbero.Sign_Up"
+        android:label="fragment_sign__up"
+        tools:layout="@layout/fragment_sign__up" >
+        <action
+            android:id="@+id/action_sign_Up_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.barbero.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_log_In"
+            app:destination="@id/log_In" />
+        <action
+            android:id="@+id/action_home2_to_profile2"
+            app:destination="@id/profile2" />
+        <action
+            android:id="@+id/action_home2_to_setAppointmentDetails"
+            app:destination="@id/setAppointmentDetails" />
+        <action
+            android:id="@+id/action_home2_to_hair_Cuts"
+            app:destination="@id/hair_Cuts" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile2"
+        android:name="com.example.barbero.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile2_to_log_In"
+            app:destination="@id/log_In" />
+    </fragment>
+    <fragment
+        android:id="@+id/setAppointmentDetails"
+        android:name="com.example.barbero.SetAppointmentDetails"
+        android:label="fragment_set_appointment_details"
+        tools:layout="@layout/fragment_set_appointment_details" />
+    <fragment
+        android:id="@+id/hair_Cuts"
+        android:name="com.example.barbero.Hair_Cuts"
+        android:label="fragment_hair__cuts"
+        tools:layout="@layout/fragment_hair__cuts" />
+</navigation>

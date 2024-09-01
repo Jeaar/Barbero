@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "908685433884",
+    "project_id": "barbero-4200c",
+    "storage_bucket": "barbero-4200c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908685433884:android:f6b311490310f830d853d9",
+        "android_client_info": {
+          "package_name": "com.example.barbero"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD75-XrEdBQ56fmn5KTza0ktKDuCje_rEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

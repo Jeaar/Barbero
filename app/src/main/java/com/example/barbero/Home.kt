@@ -2,54 +2,50 @@ package com.example.barbero
 
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.drawerlayout.widget.DrawerLayout
-import com.google.android.material.navigation.NavigationView
+import com.example.barbero.databinding.FragmentHomeBinding
 
 class Home : Fragment() {
 
-    private lateinit var drawerLayout: DrawerLayout
-    private lateinit var navigationView: NavigationView
+    private var _binding: FragmentHomeBinding? = null
+    private val binding get() = _binding!!
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_home, container, false)
-    
-        drawerLayout = view.findViewById(R.id.drawer_layout)
-        navigationView = view.findViewById(R.id.side_nav)
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        replaceFragment(Home_Page())
 
-        navigationView.setNavigationItemSelectedListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.nav_profile -> {
-
-                    Toast.makeText(activity, "Profile clicked", Toast.LENGTH_SHORT).show()
+        binding. bottomNav.setOnItemSelectedListener {
+            when(it.itemId){
+                R.id.home_page->{
+                    replaceFragment(Home_Page())
                     true
                 }
-                R.id.nav_barbers -> {
-
-                    Toast.makeText(activity, "Barbers clicked", Toast.LENGTH_SHORT).show()
+                R.id.purchase_page->{
+                    replaceFragment(Hair_Cuts())
                     true
                 }
-                R.id.nav_contact -> {
-
-                    Toast.makeText(activity, "Contact Us clicked", Toast.LENGTH_SHORT).show()
-                    true
-                }
-                R.id.nav_about -> {
-
-                    Toast.makeText(activity, "About Us clicked", Toast.LENGTH_SHORT).show()
-                    true
-                }
-                else -> false
+                else-> false
             }
         }
 
-        return view
+        return binding.root
+    }
+
+    private fun replaceFragment(fragment: Fragment) {
+        childFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)
+            .commit()
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

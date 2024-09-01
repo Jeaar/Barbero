@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAB396"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".AboutUs">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/koh"
+        android:text="About Us"
+        android:textColor="#333"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/koh"
+        android:text="BarberoShop was founded in 2024. We opened our first location in Umingan, Pangasinan.\n\n This new approach, along with an ambitious redesign of the premises set by the classic Filipino barbershop, was very well received by the customers and many shops.\n\nHowever, if there is something that validates our effort beyond having started our urban cuts barbershop movement in Umingan, it is the satisfaction of our clients who, year after year, continue to trust us and our methods."
+        android:textAlignment="center"
+        android:textColor="#333"
+        android:textSize="15dp" />
+
+
+</LinearLayout>

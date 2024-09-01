@@ -9,62 +9,40 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.example.barbero.databinding.FragmentSignUpBinding
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 
 class Sign_Up : Fragment() {
 
-    private lateinit var firstName: EditText
-    private lateinit var lastName: EditText
-    private lateinit var phone: EditText
-    private lateinit var email: EditText
-    private lateinit var password: EditText
-    private lateinit var signUpButton: Button
-    private lateinit var loginTextView: TextView
+    private lateinit var binding: FragmentSignUpBinding
+
+    private lateinit var auth: FirebaseAuth
+    private lateinit var database: FirebaseDatabase
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_sign__up, container, false)
+        binding = FragmentSignUpBinding.inflate(inflater, container, false)
+        auth = FirebaseAuth.getInstance()
+        database = FirebaseDatabase.getInstance()
 
-        firstName = view.findViewById(R.id.firstname)
-        lastName = view.findViewById(R.id.lastname)
-        phone = view.findViewById(R.id.phone)
-        email = view.findViewById(R.id.email)
-        password = view.findViewById(R.id.password)
-        signUpButton = view.findViewById(R.id.signup)
-        loginTextView = view.findViewById(R.id.login)
-
-        signUpButton.setOnClickListener {
-            handleSignUp()
+        binding.signup.setOnClickListener{
+            auth.createUserWithEmailAndPassword(binding.email.text.toString(), binding.password.text.toString())
+                .addOnSuccessListener {
+                    val path = database.getReference("users")
+                    path.child(it.user?.uid.toString()).apply {
+                        child("firstname").setValue(binding.firstname.text.toString())
+                       child("lastname").setValue(binding.lastname.text.toString())
+                       child("phone").setValue(binding.phone.text.toString())
+                    }
+                    findNavController().navigate(R.id.action_sign_Up_to_home2)
+                }
         }
 
-        loginTextView.setOnClickListener {
-            navigateToLogIn()
-        }
-
-        return view
-    }
-
-    private fun handleSignUp() {
-        val firstNameText = firstName.text.toString()
-        val lastNameText = lastName.text.toString()
-        val phoneText = phone.text.toString()
-        val emailText = email.text.toString()
-        val passwordText = password.text.toString()
-
-        if (firstNameText.isEmpty() || lastNameText.isEmpty() || phoneText.isEmpty() || emailText.isEmpty() || passwordText.isEmpty()) {
-            Toast.makeText(activity, "Please fill all fields", Toast.LENGTH_SHORT).show()
-        } else {
-
-            Toast.makeText(activity, "Sign-Up Successful", Toast.LENGTH_SHORT).show()
-            navigateToLogIn()
-        }
-    }
-
-    private fun navigateToLogIn() {
-        activity?.supportFragmentManager?.beginTransaction()
-            ?.replace(R.id.fragment_container, Log_In())
-            ?.addToBackStack(null)
-            ?.commit()
+        return binding.root
     }
 }
