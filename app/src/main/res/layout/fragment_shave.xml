@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C5C6C6"
+    android:background="#ECDFCC"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".Shave">
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="20dp"
         android:fontFamily="@font/koh"
-        android:text="Top"
+        android:text="Top Shave"
         android:textColor="#333"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -82,12 +82,12 @@
                     app:cardBackgroundColor="#00000000"
                     app:cardElevation="0dp">
 
-
                     <ImageView
+                        android:src="@drawable/boxedbeard"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:paddingBottom="30dp"
                         android:scaleType="centerCrop" />
-
                 </androidx.cardview.widget.CardView>
 
                 <TextView
@@ -100,7 +100,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="Short Boxed Beard"
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -114,7 +114,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="A short beard with thin, neatly trimmed sides."
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="12sp" />
             </GridLayout>
 
@@ -139,8 +139,10 @@
                     app:cardElevation="0dp">
 
                     <ImageView
+                        android:src="@drawable/circlebeard"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:paddingBottom="30dp"
                         android:scaleType="centerCrop" />
                 </androidx.cardview.widget.CardView>
 
@@ -154,7 +156,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="Circle Beard"
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -168,7 +170,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="A chin patch and a mustache that forms a circle."
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="12sp" />
             </GridLayout>
 
@@ -193,6 +195,7 @@
                     app:cardElevation="0dp">
 
                     <ImageView
+                        android:src="@drawable/stubblebeard"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="centerCrop" />
@@ -209,7 +212,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="3-day Stubble Beard"
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -223,7 +226,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="A closely trimmed beard that simulates 3 days of stubble."
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="12sp" />
             </GridLayout>
         </LinearLayout>

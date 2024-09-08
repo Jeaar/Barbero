@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.barbero.databinding.FragmentHomeBinding
 
 class Home : Fragment() {
@@ -29,13 +31,38 @@ class Home : Fragment() {
                     true
                 }
                 R.id.purchase_page->{
-                    replaceFragment(Hair_Cuts())
+                    replaceFragment(Purchase_History())
                     true
                 }
                 else-> false
             }
         }
 
+        binding.sideNav.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.nav_profile -> {
+                    findNavController().navigate(R.id.action_home2_to_profile2)
+                }
+
+                R.id.nav_barbers -> {
+                    findNavController().navigate(R.id.action_home2_to_barbers2)
+
+                }
+
+                R.id.nav_contact -> {
+                    findNavController().navigate(R.id.action_home2_to_contact_Us)
+
+                }
+
+                R.id.nav_about -> {
+                    findNavController().navigate(R.id.action_home2_to_aboutUs)
+
+                }
+            }
+            // Close drawer after item is tapped
+            binding.drawerLayout.closeDrawer(GravityCompat.START)
+            true
+        }
         return binding.root
     }
 

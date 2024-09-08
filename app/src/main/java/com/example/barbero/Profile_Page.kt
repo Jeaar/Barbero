@@ -20,9 +20,7 @@ class Profile_Page : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         binding = FragmentProfilePageBinding.inflate(inflater, container, false)
-
         return binding.root
     }
 }

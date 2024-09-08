@@ -73,34 +73,12 @@
         app:layout_constraintTop_toTopOf="@id/labelDate"
         tools:text="Date" />
 
-    <TextView
-        android:id="@+id/labelTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Time:"
-        android:textColor="#333"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/dateText" />
-
-    <TextView
-        android:id="@+id/timeText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textColor="#333"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/labelTime"
-        app:layout_constraintTop_toTopOf="@id/labelTime"
-        tools:text="Time" />
-
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="20dp"
         android:background="#333"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/labelTime" />
+        app:layout_constraintTop_toBottomOf="@id/labelDate" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

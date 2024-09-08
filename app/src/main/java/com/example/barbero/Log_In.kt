@@ -48,12 +48,6 @@ class Log_In : Fragment() {
         binding.signup.setOnClickListener{
             findNavController().navigate(R.id.action_log_In_to_sign_Up)
         }
-
-
-
-
-
-
         return binding.root
     }
 }

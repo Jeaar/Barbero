@@ -42,7 +42,6 @@ class Sign_Up : Fragment() {
                     findNavController().navigate(R.id.action_sign_Up_to_home2)
                 }
         }
-
         return binding.root
     }
 }

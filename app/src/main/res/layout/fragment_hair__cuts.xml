@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C5C6C6"
+    android:background="#ECDFCC"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".Hair_Cuts">
@@ -100,7 +100,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="Buzz cut"
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -114,7 +114,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="A buzz cut is a very short haircut, usually all around the head, and close to the scalp using electric clippers."
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="12sp" />
             </GridLayout>
 
@@ -157,7 +157,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="Burst Fade"
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -171,7 +171,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="An undercut is a haircut with short, buzzed sides and back disconnected from the longer crown area."
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="12sp" />
             </GridLayout>
 
@@ -212,7 +212,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="Taper fade"
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -226,7 +226,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="The taper fade haircut offers a clean style that gradually blends hair shorter at the sides and back."
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="12sp" />
             </GridLayout>
 
@@ -268,7 +268,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="Crew Cut"
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -282,7 +282,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="The haircut features longer hair on top and shorter hair on the sides and back, with a gradual taper from the front to the back."
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="12sp" />
             </GridLayout>
 
@@ -324,7 +324,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="Comma"
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -338,7 +338,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="The comma hairstyle is a medium-length curtain style in which the fringe is styled towards the face to resemble a comma."
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="12sp" />
             </GridLayout>
 
@@ -381,7 +381,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="Classic pompadour"
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -395,12 +395,12 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="The cut on the sides of the head, with modern pomps sporting super short sides, undercuts, or shaved sides and the classic having slightly shorter sides and a slicked-back appearance."
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="9sp" />
             </GridLayout>
 
             <GridLayout
-                android:id="@+id/fringe"
+                android:id="@+id/curlyfringe"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginTop="15dp"
@@ -437,7 +437,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="Curly fringe"
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -451,7 +451,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/koh"
                     android:text="The fringe is a versatile and attractive hairstyle for men who want to flaunt their texture, volume and flow for a stylish look."
-                    android:textColor="#333"
+                    android:textColor="#ECDFCC"
                     android:textSize="12sp" />
             </GridLayout>
         </LinearLayout>

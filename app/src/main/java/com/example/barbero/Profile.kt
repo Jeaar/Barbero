@@ -36,22 +36,14 @@ class Profile : Fragment() {
                 binding.name.setText(snapshot.child("firstname").value.toString())
                 binding.number.setText(snapshot.child("phone").value.toString())
                 binding.email.setText(auth.currentUser?.email.toString())
-
             }
-
             override fun onCancelled(error: DatabaseError) {
             }
-
         })
-
         binding.logout.setOnClickListener{
             auth.signOut()
             findNavController().navigate(R.id.action_profile2_to_log_In)
-
         }
-
-
-
         return binding.root
     }
 }

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C5C6C6"
+    android:background="#ECDFCC"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".Barbers">
@@ -35,6 +35,7 @@
             android:layout_marginEnd="20dp">
 
             <ImageView
+                android:src="@drawable/sophia"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop" />
@@ -50,8 +51,8 @@
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:fontFamily="@font/koh"
-            android:text="angkol Kulas"
-            android:textColor="#333"
+            android:text="Sophia Casem"
+            android:textColor="#ECDFCC"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -65,7 +66,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/koh"
             android:text="20 yrs. old \nSchedule - MON-THU "
-            android:textColor="#333"
+            android:textColor="#ECDFCC"
             android:textSize="15sp" />
     </GridLayout>
 
@@ -87,6 +88,7 @@
             android:layout_marginEnd="20dp">
 
             <ImageView
+                android:src="@drawable/lloyd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop" />
@@ -102,8 +104,8 @@
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:fontFamily="@font/koh"
-            android:text="Peter Pan"
-            android:textColor="#333"
+            android:text="Lloyd Bengan"
+            android:textColor="#ECDFCC"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -117,7 +119,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/koh"
             android:text="21 yrs. old \nSchedule - MON-THU "
-            android:textColor="#333"
+            android:textColor="#ECDFCC"
             android:textSize="15sp" />
     </GridLayout>
 
@@ -139,6 +141,7 @@
             android:layout_marginEnd="20dp">
 
             <ImageView
+                android:src="@drawable/eyron"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop" />
@@ -153,8 +156,8 @@
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:fontFamily="@font/koh"
-            android:text="Don Pacon"
-            android:textColor="#333"
+            android:text="Eyron Mendejar"
+            android:textColor="#ECDFCC"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -168,7 +171,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/koh"
             android:text="20 yrs. old \nSchedule - MON-THU "
-            android:textColor="#333"
+            android:textColor="#ECDFCC"
             android:textSize="15sp" />
     </GridLayout>
 
@@ -190,6 +193,7 @@
             android:layout_marginEnd="20dp">
 
             <ImageView
+                android:src="@drawable/jhonrex"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop" />
@@ -205,8 +209,8 @@
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:fontFamily="@font/koh"
-            android:text="robin padilpat"
-            android:textColor="#333"
+            android:text="Jhon Rex Manaois"
+            android:textColor="#ECDFCC"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -220,9 +224,63 @@
             android:layout_weight="1"
             android:fontFamily="@font/koh"
             android:text="20 yrs. old \nSchedule - MON-THU "
-            android:textColor="#333"
+            android:textColor="#ECDFCC"
             android:textSize="15sp" />
     </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/card"
+        android:columnCount="2"
+        android:paddingHorizontal="10dp"
+        android:rowCount="1">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="20dp">
+
+            <ImageView
+                android:src="@drawable/jear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/koh"
+            android:text="John Ray Pogi Viernes"
+            android:textColor="#ECDFCC"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="35dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/koh"
+            android:text="20 yrs. old \nSchedule - MON-THU "
+            android:textColor="#ECDFCC"
+            android:textSize="15sp" />
+    </GridLayout>
+
 
 
 </LinearLayout>

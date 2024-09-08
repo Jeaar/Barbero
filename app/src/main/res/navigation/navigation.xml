@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
 
-    app:startDestination="@id/log_In">
+    app:startDestination="@id/splash_Screen">
 
     <fragment
         android:id="@+id/log_In"
@@ -44,6 +44,33 @@
         <action
             android:id="@+id/action_home2_to_hair_Cuts"
             app:destination="@id/hair_Cuts" />
+        <action
+            android:id="@+id/action_home2_self"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_home2_to_home_Page"
+            app:destination="@id/home_Page" />
+        <action
+            android:id="@+id/action_home2_to_purchase_History"
+            app:destination="@id/purchase_History" />
+        <action
+            android:id="@+id/action_home2_to_contact_Us"
+            app:destination="@id/contact_Us" />
+        <action
+            android:id="@+id/action_home2_to_shave"
+            app:destination="@id/shave" />
+        <action
+            android:id="@+id/action_home2_to_hair_Color"
+            app:destination="@id/hair_Color" />
+        <action
+            android:id="@+id/action_home2_to_aboutUs"
+            app:destination="@id/aboutUs" />
+        <action
+            android:id="@+id/action_home2_to_barbers2"
+            app:destination="@id/barbers2" />
+        <action
+            android:id="@+id/action_home2_to_contact_Us2"
+            app:destination="@id/contact_Us" />
     </fragment>
     <fragment
         android:id="@+id/profile2"
@@ -58,10 +85,94 @@
         android:id="@+id/setAppointmentDetails"
         android:name="com.example.barbero.SetAppointmentDetails"
         android:label="fragment_set_appointment_details"
-        tools:layout="@layout/fragment_set_appointment_details" />
+        tools:layout="@layout/fragment_set_appointment_details" >
+        <action
+            android:id="@+id/action_setAppointmentDetails_to_appointment_Done2"
+            app:destination="@id/appointment_Done2" />
+    </fragment>
     <fragment
         android:id="@+id/hair_Cuts"
         android:name="com.example.barbero.Hair_Cuts"
         android:label="fragment_hair__cuts"
-        tools:layout="@layout/fragment_hair__cuts" />
+        tools:layout="@layout/fragment_hair__cuts" >
+        <action
+            android:id="@+id/action_hair_Cuts_to_setAppointmentDetails"
+            app:destination="@id/setAppointmentDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_Page"
+        android:name="com.example.barbero.Home_Page"
+        android:label="fragment_home__page"
+        tools:layout="@layout/fragment_home__page" >
+        <action
+            android:id="@+id/action_home_Page_to_hair_Cuts"
+            app:destination="@id/hair_Cuts" />
+        <action
+            android:id="@+id/action_home_Page_to_profile_Page"
+            app:destination="@id/profile_Page" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchase_History"
+        android:name="com.example.barbero.Purchase_History"
+        android:label="fragment_purchase__history"
+        tools:layout="@layout/fragment_purchase__history" />
+    <fragment
+        android:id="@+id/profile_Page"
+        android:name="com.example.barbero.Profile_Page"
+        android:label="fragment_profile__page"
+        tools:layout="@layout/fragment_profile__page" />
+    <fragment
+        android:id="@+id/contact_Us"
+        android:name="com.example.barbero.Contact_Us"
+        android:label="fragment_contact__us"
+        tools:layout="@layout/fragment_contact__us" />
+    <fragment
+        android:id="@+id/barbers2"
+        android:name="com.example.barbero.Barbers"
+        android:label="fragment_barbers"
+        tools:layout="@layout/fragment_barbers" />
+    <fragment
+        android:id="@+id/hair_Color"
+        android:name="com.example.barbero.Hair_Color"
+        android:label="fragment_hair__color"
+        tools:layout="@layout/fragment_hair__color" >
+        <action
+            android:id="@+id/action_hair_Color_to_setAppointmentDetails2"
+            app:destination="@id/setAppointmentDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/shave"
+        android:name="com.example.barbero.Shave"
+        android:label="fragment_shave"
+        tools:layout="@layout/fragment_shave" >
+        <action
+            android:id="@+id/action_shave_to_setAppointmentDetails"
+            app:destination="@id/setAppointmentDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointment_Done2"
+        android:name="com.example.barbero.Appointment_Done"
+        android:label="fragment_appointment__done"
+        tools:layout="@layout/fragment_appointment__done" >
+        <action
+            android:id="@+id/action_appointment_Done2_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUs"
+        android:name="com.example.barbero.AboutUs"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/splash_Screen"
+        android:name="com.example.barbero.Splash_Screen"
+        android:label="fragment_splash__screen"
+        tools:layout="@layout/fragment_splash__screen" >
+        <action
+            android:id="@+id/action_splash_Screen_to_log_In"
+            app:destination="@id/log_In" />
+        <action
+            android:id="@+id/action_splash_Screen_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
 </navigation>

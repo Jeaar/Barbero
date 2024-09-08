@@ -15,7 +15,6 @@ class PurchaseAdapter(private var purchases: List<Purchase>) :
             binding.serviceText.text = purchase.service
             binding.serviceTypeText.text = purchase.serviceType
             binding.dateText.text = purchase.date
-            binding.timeText.text = purchase.time
         }
     }
 
