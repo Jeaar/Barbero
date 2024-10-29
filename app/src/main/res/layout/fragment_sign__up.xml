@@ -118,6 +118,4 @@
         android:textColor="#FFFFFF"
         android:text="Sign Up"
         android:background="@drawable/primarybtn"/>
-
-
 </LinearLayout>
